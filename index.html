@@ -6,101 +6,175 @@
 content="width=device-width,
 initial-scale=1.0">
 
-<title>Verificación - Industrias 
+<title>Credencial Digital - Industrias 
 Melloni </title>
 
 <style>
+ * { box-sizing: border-box;
+ }   
 body {
-font-family: Arial,sans-serif;
-background:#f2f4f7;
 margin:0;
 padding: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+ background:#eef1f4;
+ color: #1f2937;
 }
 
-.contenedor{
-max-width: 500px
+.credencial{
+max-width: 480px
 margin: auto;
 background:white;
-border-radius: 15px;
-padding: 25px;
-box-shadow: 0 4px 15px
-rgba (0,0,0,.15);
+border-radius: 18px;
+overflow: hidden;
+box-shadow: 0 8px 25px
+rgba (0,0,0,.18);
 }
 
 .encabezado{
-text-aling: center;
-border-bottom: 3px solid #1d4ed8;
-padding-bottom: 15px;
+background:#ffffff
+ text-aling: center;
+padding: 22px 20px 15px;
+ border-bottom: 5px solid #1d4ed8;
 }
-.encabezado h1 {
-margin: 5px;
-color: #1d4ed8;
+.logo{
+width:180px;
+max-width: 80%;
+height: auto;
+ display: block:
+margin:0 auto 12px;
+}
+.empresa{
+font-size:23px;
+font-weight: bold;
+ color: #163b70
+margin:0;
+}
+.subtitulo{
+color: #6b7280;
+font-size: 17px;
+ margin-top:5px;
+ letter-spacing: .5px;
+}
+.perfil{
+text-align:center;
+color:#777;
+padding:25px 20px 15px;
 }
 .foto{
-width:130px;
-height:160px;
+width:145px;
+height:175px;
 object-fit: cover;
-border-radius:10px;
-margin-top:15px;
+border-radius:12px;
+ border: 4px solid #e5e7eb;
+box-shadow: 0 3px 10px;
+rgba (0,0,0,.15);
 }
 .nombre{
 font-size:23px;
 font-weight: bold;
 margin-top:15px;
+ color: #111827
 }
 .puesto{
-color: #555;
+color: #4b5563;
 font-size: 17px;
+ margin-top: 15px
 }
 .estado{
+text-align: center;
 background: #dcfce7;
 color: #166534;
-padding: 10px;
-border-radius: 8px;
+padding: 12px;
+border: 1px solid #86efac;
 font-weight: bold;
-margin: 20px 0;
+margin: 5px 20px  20px;
+}
+.contenido{
+padding: 0 20px 25px;
 }
 .seccion{
 margin-top:20px;
+}
+ .titulo {
+  font-size:17px;
+  font-weight:bold;
+margin-bottom: 12px;
+color: #163b70;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 7px;
+}
+.dato {
+background:#f8fafc;
+padding: 12px;
+border-radius: 8px;
+margin-bottom: 8px;
+}
+.dato b {
+color: #374151;
 }
 .dc3{
 border-left:5px solid #16a34a;
 background:#f8fafc;
 padding: 12px;
-margin:10px 0;
-border-radius:5px;
+margin-bottom:10px;
+border-radius:7px;
+}
+ .dc3 strong {
+  display:block;
+  margin-bottom: 5px;
 }
 .vigente{
-color: #16a34a;
+display: inline-block;
+ margin-top: 7px;
+ color: #166534;
 font-weight: bold;
+font-size: 14px;
 }
-.pie{
-text-align:center;
-color:#777;
+.contacto{
+background:#eff6ff;
+border: 1px solid #bfdbfe;
+ padding: 13px;
+ border-radius: 8px;
+ margin-bottom: 10px;
+}
+.telefono{
+display: block;
+ margin-top: 10px;
+ text-align: center;
+ background: #16a34a;
+ color: white;
+ text-decoration: none;
+font-weight: bold;
+padding: 11px;
+ border-radius: 8px;
+}
+ .telefono:hover{
+background: #15803d;
+ }
+ .pie{
+background: #f3f4f6;
+  text-align:center;
+padding: 15px;
+  color:#6b7280;
 font-size:12px;
-margin-top:25px;
 }
  
-.logo{
-width:180px;
-max-width: 80%;
-height: auto;
-margin-bottom:10px;
-}
 </style>
 </head>
 
 <body>
-<img src="logo.jpg" alt="Logo Industrias Melloni" class="logo">
-<div class="contenedor">
-
+<div class="credencial">
 <div class="encabezado">
+ <img src="logo.jpg" alt="Logo Industrias Melloni" class="logo">
+
+<div class="empresa">
 <h1>INDUSTRIAS MELLONI</h1>
 <div>VERIFICACION DE CREDENCIAL</div>
-
+<div class="subtitulo">
+ CREDENCIAL DIGITAL DE PERSONAL
 </div>
-<div style="text-align:center;">
-<img src="1.jpg"class="foto">
+<div class="perfil">
+<img src="1.jpg"alt="Fotografia de Eugenio Casas Alatriste" class="foto">
 
 <div class="nombre">
 Eugenio Casas Alatriste de Santiago
@@ -115,15 +189,25 @@ Supervisor de obra
 CREDENCIAL ACTIVA
 </div>
 
-<div>
-<b> NSS:</b> 03 24 99 1193 8
+<div class="contenido">
+<div class="seccion"> 
+ <div class="titulo">
+DATOS LABORALES
+  </div>
+<div class="dato">
+ <b> NSS:</b> 03 24 99 1193 8
+<b> NSS:</b> 
+<div class="dato">
+<b> Puesto:</b> Supervisor de obra 
 </div>
+ </div>
 <div class="seccion">
-<h2> DC-3 Vigentes</h2>
-
+<div class="titulo">
+CAPACITACION DC-3
+  </div>
 <div class="dc3">
-<b> COMBATE DE INCENDIOS </b> <br>
-Vigencia:18/05/2026 al 18/05/2027 </br>
+<strong> COMBATE DE INCENDIOS </strong> 
+Vigencia:18/05/2026 al 18/05/2027 
 <span class="vigente">
 VIGENTE </span>
 </div>
@@ -142,7 +226,26 @@ Vigencia:16/05/2026 al 16/05/2027 </br>
 VIGENTE </span>
 </div>
 </div>
-<div class="pie"> DOCUMENTO DE VERIFICACION LABORAL
+<div class="seccion">
+<div class="titulo">
+AGENTE CAPACITADOR
+  </div>
+<div class="contacto">
+<strong> Isidro Ramos Melquiades </strong> 
+</div>
+</div>
+<div class="seccion">
+<div class="titulo">
+CONTACTO DE EMERGENCIA
+  </div>
+<div class="contacto">
+<strong> Ricardo Manuel Melo Goytortua </strong> 
+<a class="telefono" href="tel: 442 476 0645">
+ llamar al 442 476 0645 </a>
+</div>
+</div>
+ </div>
+  <div class="pie"> DOCUMENTO DE VERIFICACION LABORAL
 <br> Industrias Melloni </div>
  </div>
 </body>
